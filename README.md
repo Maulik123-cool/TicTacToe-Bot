@@ -65,3 +65,23 @@ def play_game():
 if __name__ == "__main__":
     play_game()
 
+
+INSTRUCTION ON HOW TO PLAY THE GAME !!
+
+1) Visit https://www.python.org/downloads/
+
+Download and install Python 3.x for your operating system (Windows/Mac/Linux).
+
+During installation, make sure to check the box that says:
+
+ "Add Python to PATH"
+
+ 2) pen Command Prompt (Windows + R, type cmd, hit Enter)
+
+Navigate to the game folder:
+
+3) The game will start in your terminal.
+
+Follow the prompts to enter player names and choose positions.
+
+It will tell you who wins, or if it's a draw!
