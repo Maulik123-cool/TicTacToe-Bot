@@ -3,67 +3,28 @@ This Tic Tac Toe bot is a fun little game you can play right in your terminal. I
 
 ![image](https://github.com/user-attachments/assets/1e0c5d04-9b39-4c2e-99a3-92a1d50cbfb1)
 
-# Tic Tac Toe Game in Python
+🎮 Play Now
 
-# Create the board
-board = [" " for _ in range(9)]
+👉 [Play on GitHub Pages](https://your-username.github.io/tic-tac-toe-web)  
+*(Replace `your-username` with your GitHub username)*
 
-# Display the board
-def print_board():
-    print()
-    print(f"{board[0]} | {board[1]} | {board[2]}")
-    print("--+---+--")
-    print(f"{board[3]} | {board[4]} | {board[5]}")
-    print("--+---+--")
-    print(f"{board[6]} | {board[7]} | {board[8]}")
-    print()
+---
 
-# Check for a win
-def check_win(player):
-    win_combinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # columns
-        [0, 4, 8], [2, 4, 6]              # diagonals
-    ]
-    for combo in win_combinations:
-        if all(board[i] == player for i in combo):
-            return True
-    return False
+## 📦 Features
 
-# Check for a draw
-def check_draw():
-    return all(cell != " " for cell in board)
+- 2-player local mode (X and O)
+- Win detection and draw logic
+- Clean, responsive UI
+- Restart button
+- Easy to host and play
+- 
+## 🚀 How to Host on GitHub Pages
 
-# Main game loop
-def play_game():
-    current_player = "X"
-    print("Welcome to Tic Tac Toe!")
-    print_board()
+1. Push all files to a GitHub repo
+2. Go to **Settings > Pages**
+3. Select `main` branch and root folder `/`
+4. Your game will be live at:  
 
-    while True:
-        try:
-            move = int(input(f"Player {current_player}, choose a position (1-9): ")) - 1
-            if move < 0 or move > 8 or board[move] != " ":
-                print("Invalid move. Try again.")
-                continue
-            board[move] = current_player
-            print_board()
-
-            if check_win(current_player):
-                print(f"Player {current_player} wins!")
-                break
-            elif check_draw():
-                print("It's a draw!")
-                break
-
-            # Switch player
-            current_player = "O" if current_player == "X" else "X"
-        except ValueError:
-            print("Please enter a number between 1 and 9.")
-
-# Run the game
-if __name__ == "__main__":
-    play_game()
 
 
 INSTRUCTION ON HOW TO PLAY THE GAME !!
